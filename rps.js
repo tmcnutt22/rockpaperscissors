@@ -9,12 +9,12 @@ s = document.getElementById("scissors").onclick;
 
 //Player choice
 function playerSelection(rock, paper, scissors);
- playerChoice = playerChoice.onclick("Rock, Paper, or Scissors?");
+ playerChoice = playerChoice.onclick();
     
 }
 
 //computer random choice
-play['rock', 'paper' , 'scissors'];
+play[r,p,s];
 function computerSelection(play) {
     computerPlay = play[Math.floor(Math.random() * play.length-1)];
         return (play);
@@ -23,35 +23,29 @@ function computerSelection(play) {
 
  //play round
  function playRound(playerSelection, computerSelection) {
-    // your code here!
-    var i;
-    for (i = 0; wins < 3 || losses < 3; i++){
-        while (playerSelection == computerSelection);{
-            if (playerSelection = r && computerSelection = s){
-                wins = wins++;
+        var i;
+        for (i = 0; wins < 3 || losses < 3; i++){
+            while (playerSelection == computerSelection);{
+                if (playerSelection = r && computerSelection = s){
+                    wins = wins++;
+                }
+                else if (playerSelection = r && computerSelection = p) {
+                    losses = losses++;
+                }
+                else if (playerSelection = p && computerSelection = r){
+                    wins = wins++;
+                }
+                else if(playerSelection = p && computerSelection = s){
+                    losses = losses++;
+                }
+                else if(playerSelection = s && computerSelection = p){
+                    wins = wins++;
+                }
+                else if(playerSelection = s && computerSelection = r){
+                    losses = losses++;
+                }
             }
-            else if (playerSelection = r && computerSelection = p) {
-                losses = losses++;
-            }
-            else if (playerSelection = p && computerSelection = r){
-                wins = wins++;
-            }
-            else if(playerSelection = p && computerSelection = s){
-                losses = losses++;
-            }
-            else if(playerSelection = s && computerSelection = p){
-                wins = wins++;
-            }
-            else if(playerSelection = s && computerSelection = r){
-                losses = losses++;
-            }
-        }
-        // else;   
-    }
-    c    
-        
+            else break;
+        }   
 }
 
-const playerSelection = 'rock'
-const computerSelection = computer()
-console.log(playRound(playerSelection, computerSelection))
