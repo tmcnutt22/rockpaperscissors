@@ -3,29 +3,51 @@ var wins = 0;
 var losses = 0;
 
 //declaration of variables
-rock = document.getElementById("rock");
-paper = document.getElementById("paper");
-scissors = document.getElementById("scissors");
-const play['rock', 'paper','scissors'];
+r = document.getElementById("rock").onclick;
+p = document.getElementById("paper").onclick;
+s = document.getElementById("scissors").onclick;
 
 //Player choice
-function playerSelection(play)
- playerChoice = window.prompt("Rock, Paper, or Scissors?");
+function playerSelection(rock, paper, scissors);
+ playerChoice = playerChoice.onclick("Rock, Paper, or Scissors?");
     
 }
 
 //computer random choice
-
+play['rock', 'paper' , 'scissors'];
 function computerSelection(play) {
-    return play[Math.floor(Math.random() * play.length)];
+    computerPlay = play[Math.floor(Math.random() * play.length-1)];
+        return (play);
     
  }
 
  //play round
  function playRound(playerSelection, computerSelection) {
-	// your code here!
+    // your code here!
+    if (playerSelection = r && computerSelection = s){
+        wins = wins++;
+    }
+    else if (playerSelection = r && computerSelection = p) {
+        losses = losses++;
+    }
+    else if (playerSelection = p && computerSelection = r){
+        wins = wins++;
+    }
+    else if(playerSelection = p && computerSelection = s){
+        losses = losses++;
+    }
+    else if(playerSelection = s && computerSelection = p){
+        wins = wins++;
+    }
+    else if(playerSelection = s && computerSelection = r){
+        losses = losses++;
+    }
+    else
+    if (playerSelection == computerSelection){
+        
+    }
 }
 
 const playerSelection = 'rock'
-const computerSelection = computerPlay()
+const computerSelection = computer()
 console.log(playRound(playerSelection, computerSelection))
