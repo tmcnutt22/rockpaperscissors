@@ -24,28 +24,32 @@ function computerSelection(play) {
  //play round
  function playRound(playerSelection, computerSelection) {
     // your code here!
-    if (playerSelection = r && computerSelection = s){
-        wins = wins++;
+    var i;
+    for (i = 0; wins < 3 || losses < 3; i++){
+        while (playerSelection == computerSelection);{
+            if (playerSelection = r && computerSelection = s){
+                wins = wins++;
+            }
+            else if (playerSelection = r && computerSelection = p) {
+                losses = losses++;
+            }
+            else if (playerSelection = p && computerSelection = r){
+                wins = wins++;
+            }
+            else if(playerSelection = p && computerSelection = s){
+                losses = losses++;
+            }
+            else if(playerSelection = s && computerSelection = p){
+                wins = wins++;
+            }
+            else if(playerSelection = s && computerSelection = r){
+                losses = losses++;
+            }
+        }
+        // else;   
     }
-    else if (playerSelection = r && computerSelection = p) {
-        losses = losses++;
-    }
-    else if (playerSelection = p && computerSelection = r){
-        wins = wins++;
-    }
-    else if(playerSelection = p && computerSelection = s){
-        losses = losses++;
-    }
-    else if(playerSelection = s && computerSelection = p){
-        wins = wins++;
-    }
-    else if(playerSelection = s && computerSelection = r){
-        losses = losses++;
-    }
-    else
-    if (playerSelection == computerSelection){
+    c    
         
-    }
 }
 
 const playerSelection = 'rock'
